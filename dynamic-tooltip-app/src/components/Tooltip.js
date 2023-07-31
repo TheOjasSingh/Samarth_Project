@@ -1,7 +1,8 @@
 // src/components/Tooltip.js
 import React, { useState } from 'react';
+import styles from '../styles.module.css';
 
-const Tooltip = ({ target, position, style, text }) => {
+export default function Tooltip({ target, position, style, text }) {
   const [isVisible, setIsVisible] = useState(false);
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
 
@@ -51,5 +52,3 @@ const Tooltip = ({ target, position, style, text }) => {
     </>
   );
 };
-
-export default Tooltip;
